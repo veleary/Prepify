@@ -18,7 +18,7 @@
         <td><%= page.pageable_id %></td>
         <td><%= page.pageable_type %></td>
         <td><%= page.subject.name %></td>
-        <td><%= link_to 'Show', page %></td>
+        <td><%= link_to 'Show', subject_page_path(@pageable, page) %></td>
         
        
       </tr>

@@ -10,6 +10,9 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+    @subject = Subject.find(params[:subject_id])
+    @page = Page.find(params[:id])
+    @pageable = @page.pageable
   end
 
   # # GET /pages/new
